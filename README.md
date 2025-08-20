@@ -1,2 +1,1 @@
-# C-C-
-Linguagem C
+Linguagem em C
