@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+float area_esfera(float PI, float raio);
+
+int main(){
+    float raio;
+    const float PI = 3.14159;
+    
+    printf("Qual o raio da esfera?");
+    scanf("%f", &raio);
+    
+    float area = area_esfera(PI,raio);
+    
+    printf("A area da esfera com essas medidas é:%.2f",area);
+    return 0;
+}
+float area_esfera(float PI, float raio){
+    float area;
+    area = 4*PI*raio*raio;
+    return area;
+}
