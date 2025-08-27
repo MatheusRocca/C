@@ -18,7 +18,7 @@ float calculos(float frequencia, float nota){
     if (frequencia < 75){
         printf("Aluno reprovado por ter baixa frequencia.");
     }
-    else if(frequencia > 75) and (nota >=7.5){
+    else if(frequencia > 75 && nota >=7.5){
         printf("Aluno aprovado.");
     }
     else{
