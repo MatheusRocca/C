@@ -34,14 +34,20 @@ int main() {
     int numeroSorteado = gerarNumero();
     int palpite, tentativas = 0;
     int acertou = 0;
+    const int maxTentativas = 5;
 
-    while (!acertou) {
+    while (!acertou && tentativas < maxTentativas) {
         palpite = pedirPalpite();
         tentativas++;
         acertou = verificarPalpite(palpite, numeroSorteado);
     }
 
-    printf("Parabéns!!! Você acertou em %d tentativas.\n", tentativas);
+    if (acertou) {
+        printf("Parabéns!!! Você acertou em %d tentativas.\n", tentativas);
+    } else {
+        printf("Você excedeu o número máximo de tentativas.\n");
+        printf("O número sorteado era: %d\n", numeroSorteado);
+    }
 
     return 0;
 }
