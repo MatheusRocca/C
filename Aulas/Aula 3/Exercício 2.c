@@ -15,7 +15,7 @@ int calculos(float a, float b, float c){
     if(a < b + c && 
        b < a + c && 
        c < a + b) {
-        printf("Este triangulo existe);
+        printf("Este triangulo existe");
     }
     else{
         printf("Este triângulo não existe.");
