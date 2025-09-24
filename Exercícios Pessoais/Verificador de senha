@@ -1,0 +1,24 @@
+//Aprendendo a usar a blibioteca de strings
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char senha[100];
+    char teste[100];
+    printf("Crie sua senha:");
+    scanf("%s", senha);
+    do{
+        printf("Digite sua senha:");
+        scanf("%s", teste);
+        
+        if(strcmp(teste,senha) == 0){
+            printf("Sua senha está correta.");
+        }
+        else{
+            printf("Sua senha esta errada.\n\n");
+        }
+    } while (strcmp(teste,senha) != 0);
+
+    return 0;
+}
